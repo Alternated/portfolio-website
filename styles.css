@@ -1,5 +1,5 @@
 body {
-  font-family: 'Times New Roman', georgia ;
+  font-family: georgia, 'Times New Roman';
   margin: 0;
   padding: 0;
   background-color: black;
@@ -26,7 +26,7 @@ nav {
   width: 100%;
   z-index: 10;
   border-color: white;
-  background-color: rgb(0, 255, 55);
+  background-color: rgb(98, 145, 78);
   font-size: large;
   padding-top: 10px;
   }
@@ -37,16 +37,15 @@ nav {
   margin: 0;
   padding: 0;  
   padding-bottom: 5px;  
-  margin-right: 30px;
   font-weight: bold;
 }
 .nav-list a {
   text-decoration: none;
-  color: black;
+  color: white;
 }
-/*When nav bar hover, color turns red*/
+/*When nav bar hover, color turns white*/
 .nav-list a:hover {
-  color: rgb(255, 255, 255);
+  color: black;
 }
 /* For spacing between list items */
 .nav-list li {
@@ -74,7 +73,7 @@ nav {
   display: block;
   text-align: center;
   font-size: 30px;
-  color: rgb(0, 255, 55);
+  color: rgb(98, 145, 78);
 }
 section {
   display: block;
@@ -86,7 +85,7 @@ section {
   height: 50vh;
   padding: 0;
   box-sizing: border-box;
-  background-color: rgb(44, 63, 36);
+  background-color: rgb(98, 145, 78);
   color: white;
   flex-direction: column;
 }
@@ -120,7 +119,7 @@ section {
   height: 20vh;
   padding: 20px 0;
   box-sizing: border-box;
-  background-color: rgb(44, 63, 36);
+  background-color: rgb(98, 145, 78);
   color: black;
   flex-direction: row;
 }
@@ -142,5 +141,30 @@ section {
 }
 
 .contact i:hover{
-  color: green;
+  color: rgb(255, 255, 255);
+}
+
+#project1{
+  width : 300px;
+  margin-right: 700px;
+}
+
+.project-tile h2{
+  padding-left: 73px;
+}
+
+.projects h1{
+  padding-bottom: 50px;
+  font-size: 60px;
+}
+
+.profile-pic {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  object-fit: cover;
+  overflow: hidden;
+  display: flexbox;
+  border-color: white;
+  border-style: solid;
 }
