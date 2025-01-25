@@ -169,6 +169,10 @@ section {
   border-style: solid;
 }
 @media only screen and (max-width: 550px){
+  body{
+    margin: 0;
+    padding: 0;
+  }
   #welcome-section h1 {
     font-size: 40px;
   }
