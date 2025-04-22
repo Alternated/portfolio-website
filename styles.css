@@ -43,11 +43,11 @@ nav {
   text-decoration: none;
   color: white;
 }
-/*When nav bar hover, color turns white*/
+
 .nav-list a:hover {
   color: black;
 }
-/* For spacing between list items */
+
 .nav-list li {
   margin: 0 15px;
 }
@@ -102,16 +102,33 @@ section {
 }
 #projects {
   display: flex;
-  justify-content: center;
+  flex-direction: column; /* Keep header above */
+  justify-content: flex-start; /* Align content to the top */
   align-items: center;
-  height: 90vh;
-  padding: 0;
+  height: auto; /* Adjust height to fit content */
+  padding: 20px 0; /* Add padding for spacing */
   box-sizing: border-box;
   background-color: rgb(0, 0, 0);
   color: white;
-  flex-direction: column;
 }
 
+#projects .projects-header {
+  margin-bottom: 20px; 
+}
+
+.projects-tiles {
+  display: flex; 
+  justify-content: center; 
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+#project1, #project2 {
+  width: 300px; 
+  margin: 0; 
+  flex-shrink: 0; 
+}
 .contact {
   display: flex;
   justify-content: center;
@@ -142,11 +159,6 @@ section {
 
 .contact i:hover{
   color: rgb(255, 255, 255);
-}
-
-#project1{
-  width : 300px;
-  margin-right: 700px;
 }
 
 .project-tile h2{
@@ -231,6 +243,10 @@ section {
     width: 70vh;
   }
   #project1{
+    width: 200px;
+    margin-right: 300px;
+  }
+  #project2{
     width: 200px;
     margin-right: 300px;
   }
